@@ -1,6 +1,6 @@
-//Find 
+// Implemente su propia funcion find
 
-let m = [1, 2, 5, 99, 8, 74];
+let m = [1, 2, 5, 100, 8, 74];
 
 let element = Math.min(...m);
 console.log(element);
