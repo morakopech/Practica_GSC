@@ -9,7 +9,7 @@ Además:
 string, number, o cualquier otro tipo. Pero que solo permita dichos tipos.
 2 Crear una nueva clase que no permita el agregado de elementos repetidos.
 */
-class Pila {
+class PilaFIFO {
     constructor() {
         this.pila = [];
     }
@@ -23,7 +23,7 @@ class Pila {
         return this.pila.length;
     }
 }
-class PilaSinRepetir extends Pila {
+class PilaSinRepetir extends PilaFIFO {
     push(elem) {
         if (!this.pila.some(item => item === elem)) {
             this.pila.push(elem);

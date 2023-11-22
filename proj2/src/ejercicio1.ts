@@ -9,7 +9,7 @@ string, number, o cualquier otro tipo. Pero que solo permita dichos tipos.
 2 Crear una nueva clase que no permita el agregado de elementos repetidos.
 */
 
-class Pila<T> {
+class PilaFIFO<T> {
     pila : T[] = [];
 
     push(elem : T) {
@@ -25,7 +25,7 @@ class Pila<T> {
     }
 }
 
-class PilaSinRepetir<T> extends Pila<T>{
+class PilaSinRepetir<T> extends PilaFIFO<T>{
     
     push(elem : T) {
         if(!this.pila.some(item => item === elem)) {
